@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'p2wik940_pedro';
-$db['default']['password'] = 'Gcxrytxy/2794349';
+$db['default']['password'] = '';
 $db['default']['database'] = 'p2wik940_wiki';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -65,8 +65,8 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 $db['DB_2']['hostname'] = 'mysql01.coho.com.br';
-$db['DB_2']['username'] = 'central_ls';
-$db['DB_2']['password'] = '#ls@Db.214';
+$db['DB_2']['username'] = '';
+$db['DB_2']['password'] = '';
 $db['DB_2']['database'] = 'wiki';
 $db['DB_2']['dbdriver'] = 'mysql';
 $db['DB_2']['dbprefix'] = '';
