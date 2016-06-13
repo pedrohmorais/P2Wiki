@@ -49,7 +49,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'p2wik940_pedro';
+$db['default']['username'] = '';
 $db['default']['password'] = '';
 $db['default']['database'] = 'p2wik940_wiki';
 $db['default']['dbdriver'] = 'mysql';
