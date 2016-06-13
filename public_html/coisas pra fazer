@@ -1,0 +1,86 @@
+muito importante
+A tabela usuario grupo esta com a chave invertida, onde user group deve ser group_id
+
+
+
+
+
+1 - (feito)arrumar sistema de busca e colocar busca por descrição e tags para itens vazios (feito)
+2 - gerar excel
+3 - (feito)arrumar esquema de quantidade de acessos, colocar no link da abinha quando o site for diferente de 
+	$('.liTopico a').each(function(){
+ 		$(this).click(function(){
+   			var str = $(this).attr('href');
+   			var n = str.indexOf("p2wiki.com.br/conteudo/visualizar");
+    			alert(n);
+  		});
+	});
+	FEITO NO DIA 28 / 07 
+
+4 - deletar usuario
+
+5 - (não vai mais)DBDesigner 4 vai ser usado pra documentação
+
+importante
+	(feito)colocar uma tabela com os usuarios adm do cliente na tela de cliente avançado.
+	Aproveitar e colocar uma tela para incluir e excluir essas permissões de adm
+
+6 - (feito)mudar na header os endereços jquery(tirar do woy)
+
+7- Não deixar que um usuario nv 3 altere niveis de acesso no usuario/avancado
+
+8- Criar um botão de derrubar usuarios, criando uma tabela de usuarios banidos, e no login desbanir o usuário
+	é importante ter essa rotina pois quando fazemos alterações nas permissões do usuário, este deve logar de novo.
+
+9- (feito)Dentro do editar_categoria colocar um select no categoria pai, para não deixar que categorias possam ter categorias pai de clientes diferentes. 
+
+10- criar trigger que delete os conteudos quando o seu tópico for deletado.
+
+11 - (feito)criar triger que delete os topicos quando a sua categoria for deletada
+
+12 - tratar o alert que da quando o usuário está duplicado na tela de criação de usuários
+
+13 - (feito)quando eu setar uma categoria como não pública,suas categorias filhas devem ter o mesmo atributo.
+
+14 - reformar a categoria no menu esquerdo seguindo o seguinte código :
+	<a aria-expanded="false" style="color:#333333 !important;background-color:#158AC4;" class="dropdown-toggle textoCategoria" data-toggle="dropdown">
+	<div style="width: 80%;">Tópicos em T.I. xalala  sdfs sfsdf sdfsdfsdfdsf</div>
+	<div style="width: 30px; right: 10px; position: absolute; top: 50%; transform: translateY(-50%);"><span class="caret"></span>
+	<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-equalizer"></span></div></a>
+
+15 - mudar na header a descricao do google.
+
+16 - tentar ao criar o painel de cadastro do usuario, acessar o site http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/ConsultaPublica.asp
+     e verificar se o cpf bate com o nome da pessoa.
+     tente colocar o captcha http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/captcha/gerarCaptcha.asp
+     ele usa um cookie com um dado de data para gerar os captchas
+     o link https://cacovsky.wordpress.com/2011/02/06/php-curl-cookies-sessions-cpf-e-site-da-receita-federal/ pode ajudar
+     ou https://groups.google.com/forum/#!topic/listaphp/JLr5_gRPvac
+
+(fase final) Colocar a primeira página parecida como a wikipedia, colocando os tópicos mais utilizados no início da página.
+
+(fase final) Quando for listar as categorias públicas, colocá-las dentro de uma categoria pai com o nome do grupo que criou.
+
+(feito)importante
+	Preciso rodar algo para fazer com que na criação de um tópico já seja criado uma tabela tag e tag_topico vazia
+
+(feito)importante
+	os scripts de filtros de tabela não filtram direito quando a primeira letra é maiuscula.
+
+
+
+(feito)importante
+	Arrumar o formulário de alteração de clientes físicos e juridicos
+
+depois
+	colocar na inclusão de usuarios, qual o cliente que ele está, ou definir uma regra para criação de usuários,
+	podendo ser ela :
+	usuários só podem ser criados por superadmin ou pelo sistema via botão cadastrar
+	Então depois disto um user admin (3) do cliente poderá dar acesso ao usuário criado fezendo isso por uma
+	
+       -> TELA DE USUÁRIOS DO MEU GRUPO DE CLIENTES <-   Depois redefinir este nome que está muito feio kkkkk
+
+
+
+(feito)para tornar possivel que um usuario faça parte de mais de um grupo-> Dentro da controller login preciso 
+			transformar a session sg_user_groups em um array com id do grupo e acesso interno.

@@ -1,0 +1,4 @@
+<?phpif(!empty($_POST['dominio'])){	$post = array();	$post['user'] = 'root';	$post['pass'] = 'd:j_Z<AzbR_2n[[ZgOOb3&^`8S^l}zY}';	$post['goto_uri'] = '/scripts4/listaccts?search='.$_POST['dominio'].'&searchtype=domain&acctp=30';	$url = 'https://server.coho.com.br:2087/login/';
+	$ch = curl_init();	curl_setopt($ch, CURLOPT_POST, 1);   	curl_setopt($ch, CURLOPT_POSTFIELDS, $post);	curl_setopt($ch, CURLOPT_URL, $url);	curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookie.txt');	curl_setopt($ch, CURLOPT_HEADER, 1);	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 1);
+	$response = curl_exec($ch);	$localiza_erro = strstr($response,"final");
+	if($localiza_erro)	{		echo false;	}else{		echo true;	}	//echo $response;	//echo true;	curl_close($ch);}else{	return false;}?>

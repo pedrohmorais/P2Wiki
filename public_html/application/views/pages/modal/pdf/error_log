@@ -1,0 +1,20 @@
+[17-May-2015 13:19:14] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
+[17-May-2015 13:19:14] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[17-May-2015 13:19:14] PHP Warning:  Invalid argument supplied for foreach() in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 58
+[17-May-2015 13:19:14] PHP Warning:  include(mpdf/mpdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 80
+[17-May-2015 13:19:14] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'mpdf/mpdf.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 80
+[17-May-2015 13:19:14] PHP Fatal error:  Class 'mPDF' not found in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 81
+[17-May-2015 13:19:26] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
+[17-May-2015 13:19:26] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[17-May-2015 13:19:26] PHP Warning:  Invalid argument supplied for foreach() in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 58
+[17-May-2015 13:19:26] PHP Warning:  include(mpdf/mpdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 80
+[17-May-2015 13:19:26] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'mpdf/mpdf.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 80
+[17-May-2015 13:19:26] PHP Fatal error:  Class 'mPDF' not found in /home/p2wik940/public_html/application/views/pages/modal/pdf/pdf.php on line 81

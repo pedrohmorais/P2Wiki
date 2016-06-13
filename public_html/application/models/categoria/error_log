@@ -1,0 +1,7 @@
+[10-Aug-2015 09:45:56] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
+[10-Aug-2015 09:45:56] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Aug-2015 09:45:56] PHP Fatal error:  Class 'CI_Model' not found in /home/p2wik940/public_html/application/models/categoria/categorias.php on line 2
